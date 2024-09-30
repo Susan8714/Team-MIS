@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Manager</title>
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <link rel="stylesheet" href="GE.css" />
+  </head>
+
+  <body>
+    <!-- Header Section -->
+    <div class="snb">
+      <div class="header">
+      <div class="logo">
+        <h1>MIS Contact</h1>
+      </div>
+      <div class="search">
+        <input
+          type="search"
+          placeholder=" Search contacts..."
+          id="search"
+          oninput="filterContacts()"
+        />
+      </div>
+      
+      <div class="change-color">
+        <button title="Change background" id="theme-moon" class="fas fa-moon"> </button> 
+    </div>
+    
+  </div>
+
+    <!-- Sidebar Section -->
+    <div class="sidebar">
+      <button onclick="loadSection('contacts')" class="side-btn" id="side-a">
+        <i class="fas fa-user"></i> Contacts
+      </button>
+      <button onclick="loadSection('recent')" class="side-btn" id="side-b">
+        <i class="fas fa-history"></i> Recent
+      </button>
+      <button onclick="loadSection('trash')" class="side-btn" id="side-c">
+        <i class="fas fa-trash"></i> Trash
+      </button>
+      <br>
+      <br>
+      <br>
+      
+    </div>
+
+    <!-- Main Content Section -->
+    <div class="main-content">
+      <!-- Contacts Section -->
+      <div id="contacts-section" class="section">
+        <h2 class="h2Color">Contacts</h2>
+        <button onclick="showAddContactForm()" class="add-btn">
+          Add Contact
+        </button>
+        <div id="no-contacts-message" class="hidden">
+          No contacts available.
+        </div>
+        <table id="contacts-table">
+          <thead>   
+            <tr>
+              <th class="trow">Name</th>
+              <th class="trow">Email</th>
+              <th class="trow">Phone</th>
+              <th class="trow">Actions</th>
+            </tr>
+          </thead>
+          <tbody id="contacts-list">
+            <!-- Contacts will be dynamically inserted here -->
+          </tbody>
+        </table>
+        <br />
+        <!-- Confirmation Dialog -->
+        <div class="confirm-dialog">
+          <p>Are you sure you want to delete this contact?</p>
+          <button title="Confirm" class="confirm-delete" onclick="alert('Deleted')">Delete</button>
+          <button class="cancel-delete">Cancel</button>
+        </div>
+      </div>
+
+      <!-- Add Contact Form (hidden initially) -->
+      <div id="add-contact-form" class="section hidden">
+        <h2 class="h2Color">Add New Contact</h2>
+        <form id="contactForm" onsubmit="event.preventDefault(); addContact();">
+          <input type="text" id="fullName" placeholder="Name"  required />
+          <input type="email" id="email" placeholder="Email" required />
+          <input type="text" id="phoneNumber" placeholder="Phone" required />
+          <div id="form-errors" class="hidden">
+            Please fill out all fields correctly.
+          </div>
+          <button type="submit">Add Contact</button>
+          <button type="button" onclick="hideAddContactForm()">Cancel</button>
+        </form>
+      </div>
+
+      <!-- Trash Section -->
+      <div id="trash-section" class="section hidden">
+        <h2 class="h2Color">Deleted Contacts</h2>
+        <div id="no-trash-message" class="hidden">No contacts in trash.</div>
+        <ul id="trash-list">
+          <!-- Deleted contacts will appear here -->
+        </ul>
+      </div>
+
+      <!-- Recent Section -->
+      <div id="recent-section" class="section hidden">
+        <h2 class="h2Color">Recent Contacts</h2>
+        <div id="no-recent-message" class="hidden">No recent contacts.</div>
+        <ul id="recent-list">
+          <!-- Recent contacts will appear here -->
+        </ul>
+      </div>
+    </div>
+    <script src="apps.js"></script>
+
+    <!-- Footer -->
+    <footer class="foot">
+      <p>© 2024 MIS Contact. All Rights Reserved.</p>
+      <p><a href="policy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+        <i>Michelle Opara</i>|<i>Issahak Issah</i>|<i>Susan Ackah</i>
+    </div>
+    </footer>
+  </body>
+</html>

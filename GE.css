@@ -1,0 +1,331 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, "Geneva", Tahoma, sans-serif;
+}
+
+/* Body Styling */
+body {
+  background: linear-gradient(130deg, #00339954 10%, #001a666c 100%),
+    url("OIG3.jfif");
+  background-size: cover;
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+  color: white;
+}
+
+/* Header Styling */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #4285f4;
+  color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.logo h1 {
+  font-size: 1.8rem;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.search input {
+  padding: 0.6rem;
+  margin-right: 10em;
+  width: 40em;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+  /* background-color: #f1f3f4ad; */
+  /* color: #030303; */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.search input[placeholder=" Search contacts..."]:focus {
+  color: #fff;
+}
+.fas {
+  margin-right: 30px;
+}
+/* Sidebar Styling */
+.sidebar {
+  background-color: white;
+  width: 249.5px;
+  position: fixed;
+  top: 4.2em;
+  left: 0;
+  height: 100vh; /* Extend to full height */
+  margin-top: 1.5em;
+  padding-top: 3rem;
+  opacity: 0.87;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  border-right: 1px solid #e0e0e0;
+}
+
+.sidebar .side-btn {
+  display: block;
+  width: 100%;
+  padding: 1em;
+  background: none;
+  border: none;
+  text-align: left;
+  font-size: 1.5em;
+  color: #5f6368;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.sidebar .side-btn i {
+  margin-left: 10px;
+}
+
+.sidebar .side-btn:hover {
+  background-color: #e8f0fe;
+  color: #1a73e8;
+}
+
+.team {
+  margin-top: 15em;
+  color: #5f6368;
+  padding: 2em;
+}
+
+/* Main Content Section */
+.main-content {
+  margin-left: 250px;
+  margin-top: 60px;
+  padding: 2rem;
+  background-color: #f9fafb;
+  min-height: calc(100vh - 60px - 10em);
+  overflow: auto;
+  opacity: 0.92;
+}
+
+.section {
+  margin-bottom: 3rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+table th,
+table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+table th {
+  background-color: #4285f4;
+  color: #e0e0e0;
+  font-weight: 600;
+}
+
+table tr:hover {
+  background-color: #e8f0fe;
+}
+
+table tr td {
+  color: #555;
+}
+
+table button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #4285f4;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+table button:hover {
+  background-color: #357ae8;
+}
+
+/* Add Button */
+.add-btn {
+  background-color: #4285f4;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  margin-right: 15px;
+  float: right;
+}
+
+.add-btn:hover {
+  background-color: #357ae8;
+}
+
+/* Trash Section Styling */
+#trash-list {
+  list-style-type: none;
+}
+
+#trash-list {
+  background-color: white;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  color: #000;
+}
+
+ul#trash-list:hover {
+  background-color: #308de9;
+}
+
+/* Hidden Class */
+.hidden {
+  display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100px;
+  }
+
+  .search {
+    width: 1em;
+    position: absolute;
+    margin-left: 2cm;
+  }
+  .main-content {
+    margin-left: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar {
+    width: 80px;
+  }
+
+  .main-content {
+    margin-left: 80px;
+  }
+}
+
+/* No Contacts / Trash Message */
+#no-contacts-message,
+#no-trash-message {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666;
+  margin-top: 2rem;
+}
+
+/* Form */
+input {
+  width: 100%;
+  height: 45px;
+  border-radius: 10px;
+  background-color: #264370;
+  border: none;
+  color: white;
+  padding-left: 10px;
+  margin-bottom: 15px;
+  font-size: 1em;
+}
+button {
+  background-color: #4285f4;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  margin-right: 15px;
+  float: right;
+}
+
+input::placeholder {
+  color: lightgray;
+}
+.confirm-dialog > p {
+  color: #000;
+  text-transform: uppercase;
+}
+/* Form Errors */
+#form-errors {
+  color: red;
+  font-size: 0.9rem;
+  margin: 10px 0;
+}
+
+/* Responsive Design Enhancements */
+@media (max-width: 768px) {
+  .main-content {
+    margin-left: 100px;
+  }
+
+  table th,
+  table td {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar {
+    width: 80px;
+  }
+
+  .main-content {
+    margin-left: 80px;
+  }
+}
+/* comfirmation */
+.confirm-dialog {
+  display: none;
+}
+
+/* recent-section */
+#recent-section {
+  color: #000;
+}
+#recent-section > ul > li {
+  list-style: none;
+}
+
+/* Footer Styling */
+footer {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background-color: #0033cc;
+  padding: 40px 0;
+  text-align: center;
+  color: white;
+  margin-top: auto;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+footer a {
+  color: #ffcc00;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}

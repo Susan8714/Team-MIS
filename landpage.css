@@ -1,0 +1,211 @@
+/* Universal Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  background: linear-gradient(
+      to right,
+      rgba(244, 244, 249, 0.95),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url("istockphoto-1360924962-612x612.jpg");
+  background-position: right center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #333;
+  overflow: hidden;
+  transition: 2s ease-in-out;
+}
+
+/* Container Styling */
+.container {
+  display: flex;
+  height: 100%;
+  overflow: hidden;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0
+  ); /* Added slight opacity to enhance text readability */
+}
+
+/* Navigation Styling */
+.navigation {
+  width: 100%;
+  position: relative;
+  margin-top: 0.2px;
+  padding: 20px;
+  background-color: #4285f4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.badge {
+  margin-left: 3em;
+}
+.badge h1 {
+  color: #fff;
+}
+
+.nav {
+  margin-right: 10em;
+}
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  margin-right: 15px;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #1a73e8;
+}
+
+/* Main Header Styling */
+header {
+  text-align: center;
+  padding: 50px 20px;
+  margin: 2cm;
+  padding: 1.5cm;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 1000px;
+  width: 100%;
+  opacity: 0.95; /* Slight transparency for effect */
+}
+
+.welcome-text {
+  font-size: 32px;
+  color: #333;
+  font-weight: bold;
+}
+.start {
+  border: none;
+  width: 5cm;
+  text-align: left;
+  word-spacing: 1px;
+  font-size: 1.5em;
+  color: #5f6368;
+  background-color: #ffffffa6;
+  border-radius: 5px;
+  padding: 0.5rem 1em;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.start:hover {
+  background-color: #2241eb;
+  color: #f4f4f9;
+}
+
+header p {
+  font-size: 18px;
+  color: #666;
+  margin: 10px 0;
+}
+button#about {
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+/* Columns Section Styling */
+.column {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.column_1,
+.column_2,
+.column_3 {
+  flex: 1;
+  padding: 20px;
+  margin: 10px;
+  height: 5cm;
+  background-color: #f4f4f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+.column_1 > p,
+.column_2 > p,
+.column_3 > p {
+  text-align: center;
+  margin-top: 2cm;
+}
+.column_1:hover,
+.column_2:hover,
+.column_3:hover {
+  background-color: #d2dff5;
+  color: #1a73e8;
+  transform: translateY(-5px);
+}
+
+#about:hover {
+  background-color: #d2dff5;
+  color: #1a73e8;
+  transform: translateY(-5px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .column {
+    flex-direction: column;
+  }
+
+  .column_1,
+  .column_2,
+  .column_3 {
+    margin-bottom: 20px;
+  }
+
+  .welcome-text {
+    font-size: 28px;
+  }
+
+  header p {
+    font-size: 16px;
+  }
+}
+
+/* Footer Styling */
+footer {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background-color: #0033cc;
+  padding: 40px 0;
+  text-align: center;
+  color: white;
+  margin-top: 19.7cm;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+footer a {
+  color: #ffcc00;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
