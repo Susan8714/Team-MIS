@@ -49,6 +49,7 @@ body {
 }
 .fas {
   margin-right: 30px;
+  border-radius: 5em;
 }
 /* Sidebar Styling */
 .sidebar {
@@ -60,7 +61,7 @@ body {
   height: 100vh; /* Extend to full height */
   margin-top: 1.5em;
   padding-top: 3rem;
-  opacity: 0.87;
+  opacity: 0.9;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
   border-right: 1px solid #e0e0e0;
 }
