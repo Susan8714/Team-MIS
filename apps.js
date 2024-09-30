@@ -512,7 +512,7 @@ background-color: #121212;
 .change-mode.main-content {
  background-color: darkgrey;
  color: white;
- opacity: 0.85;
+ opacity: 0.9;
 }
 .change-mode button {
   background-color: #121212;
