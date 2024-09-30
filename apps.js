@@ -560,6 +560,6 @@ document.head.appendChild(style);
 //Get back to Home-page
 document.querySelector(".logo").addEventListener("click", () => {
   setTimeout(() => {
-    window.location.href = "landpage.html";
+    window.location.href = "index.html";
   }, 1000);
 });
