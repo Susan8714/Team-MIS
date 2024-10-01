@@ -1,0 +1,103 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;
+}
+body{
+    background-color: lightblue;
+    background-position: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    line-height: 1.2;
+}
+.heading{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin: 20px auto;
+}
+.heading h1{
+    font-size: 35px;
+    color: #000;
+    margin-bottom: 25px;
+    position: relativee
+}
+.heading p{
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 25px; 
+}
+.container{
+    width: 70%;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+.about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.about-image{
+    flex: 1.5;
+    margin: right 45px; 
+    overflow: hidden;
+}
+.about-image img{
+    width: 95%;
+    height: auto;
+    display: flex;
+    transition: 0.5s ease;
+    margin-top: 50px;
+}
+.about-image:hover img{
+    transform: scale(1.1);
+}
+.about-content{
+    flex: 1;
+}
+.about-content h2{
+    font-size: 35px;
+    margin-top: 6px;
+    color: #333;
+}
+.about-content p{
+    font-size: 25px;
+    color: #000;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    margin-top:30px ;
+    position: absolute;
+}
+@media screen and (max-width:760px){
+    .heading{
+        padding: 0px 20px;
+    }
+    .heading h1{
+        font-size: 40px;
+    }
+    .heading p{
+        font-size: 12px;
+        margin-right: 0px;
+    }
+    .container{
+        padding: 0px;
+    }
+    .about{
+        padding: 20px;
+        flex-direction: column;
+    }
+    .about-image{
+        margin-right: 20px;
+        margin-bottom: 0px;
+    }
+    .about-content p{
+        padding: 0px;
+        font-size: 16px;
+    } 
+    
+}
