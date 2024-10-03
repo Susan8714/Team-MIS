@@ -14,13 +14,7 @@ body{
     justify-content: center;
     text-align: center;
 }
-    body{
-    background-color: lightblue;
-    background-position: 20px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    line-height: 1.2;
-}
+    
     button#back {
     border: none;
     border-radius: 5px;
