@@ -10,6 +10,29 @@
           url("OIG3.jfif");
         color: #fff;
       }
+          <style>
+    body{
+    background-color: lightblue;
+    background-position: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    line-height: 1.2;
+}
+    button#back {
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s ease, background-color 0.3s ease;
+    margin: 0 4rem;
+}
+      
+#back:hover {
+  background-color: #d2dff5;
+  color: #1a73e8;
+  transform: translateY(-5px);
+}
     </style>
   </head>
   <body>
@@ -108,7 +131,7 @@
       const getBack = document.getElementById("back");
       getBack.addEventListener("click", () => {
         setTimeout(() => {
-          window.location.href = "gr.html";
+          window.location.href = "index.html";
         }, 2000);
       });
     </script>
