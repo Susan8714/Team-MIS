@@ -14,8 +14,7 @@ body{
     justify-content: center;
     text-align: center;
 }
-    
-    button#back {
+button#back {
     border: none;
     border-radius: 5px;
     padding: 0.5rem 1rem;
